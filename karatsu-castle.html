@@ -24,25 +24,34 @@
       text-align: center;
       box-shadow: 0 8px 32px rgba(0,0,0,0.4);
     }
-    .emoji { font-size: 56px; margin-bottom: 12px; }
-    .day   { font-size: 13px; color: #aaa; letter-spacing: 2px; margin-bottom: 6px; }
-    h1     { font-size: 28px; margin: 0 0 6px; }
-    .sub   { font-size: 14px; color: #ccc; margin-bottom: 32px; }
-    audio  { width: 100%; border-radius: 12px; outline: none; }
-    .hint  { margin-top: 20px; font-size: 12px; color: #888; }
+    .spot-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 28px;
+    }
+    audio {
+      width: 100%;
+      border-radius: 12px;
+      outline: none;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="emoji">🏯</div>
-    <div class="day">DAY 5 ・ 佐賀</div>
+    <img class="spot-img"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Karatsu_Castle_in_November_2016.jpg/320px-Karatsu_Castle_in_November_2016.jpg"
+      alt="唐津城">
     <h1>唐津城</h1>
-    <div class="sub">舞鶴城導覽解說</div>
     <audio controls autoplay
       src="https://raw.githubusercontent.com/anersontw/Travel-Guide/main/01唐津城.mp3">
       您的瀏覽器不支援音訊播放。
     </audio>
-    <div class="hint">📶 建議連接 Wi-Fi 後再播放</div>
   </div>
 </body>
 </html>
