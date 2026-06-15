@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宮島導覽</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 40px 0;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      font-family: "PingFang TC", "Noto Sans TC", sans-serif;
+      color: white;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 48px 40px;
+      max-width: 380px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .spot-img {
+      width: 320px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 28px;
+    }
+    audio {
+      width: 100%;
+      height: 54px;
+      border-radius: 12px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 第一個景點 -->
+  <div class="card">
+    <img class="spot-img"
+      src="https://twtabiiro.brimgs.com/lpimg/leisure/206381/main/img3.jpg"
+      alt="大聖院">
+    <h1>大聖院</h1>
+    <audio controls
+      src="03大聖院.mp3">
+      您的瀏覽器不支援音訊播放。
+    </audio>
+  </div>
+
+  <!-- 第二個景點 -->
+  <div class="card">
+    <img class="spot-img"
+      src="https://bearlovefood.com/wp-content/uploads/20250321234718_0_f1c127.jpg"
+      alt="嚴島神社">
+    <h1>嚴島神社</h1>
+    <audio controls
+      src="04嚴島神社.mp3">
+      您的瀏覽器不支援音訊播放。
+    </audio>
+  </div>
+
+</body>
+</html>
