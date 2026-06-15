@@ -5,21 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>宮島導覽</title>
   <style>
-  <script>
-  const allAudio = document.querySelectorAll('audio');
-  
-  allAudio.forEach(audio => {
-    audio.addEventListener('play', () => {
-      allAudio.forEach(other => {
-        if (other !== audio) {
-          other.pause();
-          other.currentTime = 0;
-        }
-      });
-    });
-  });
-</script>
-    
     body {
       margin: 0;
       min-height: 100vh;
@@ -87,5 +72,19 @@
     </audio>
   </div>
 
+  <script>
+  const allAudio = document.querySelectorAll('audio');
+  
+  allAudio.forEach(audio => {
+    audio.addEventListener('play', () => {
+      allAudio.forEach(other => {
+        if (other !== audio) {
+          other.pause();
+          other.currentTime = 0;
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
